@@ -24,9 +24,9 @@ export default function Home() {
           <div className="absolute bottom-1/4 left-1/4 w-80 h-80 bg-orange-900/15 rounded-full blur-3xl opacity-30" />
         </div>
 
-        <div className="relative max-w-2xl text-center space-y-8">
+        <div className="relative max-w-2xl text-center space-y-5">
           {/* Logo/Title */}
-          <div className="space-y-4">
+          <div className="space-y-2">
             <div className="inline-block px-4 py-2 border border-amber-700/40 rounded-full text-amber-600 text-sm font-medium">
               ☕ Coming Soon
             </div>
@@ -44,7 +44,7 @@ export default function Home() {
           </p>
 
           {/* Waitlist Form */}
-          <form onSubmit={handleWaitlist} className="max-w-sm mx-auto space-y-4">
+          <form onSubmit={handleWaitlist} className="max-w-sm mx-auto space-y-3 pt-2">
             <div className="relative group">
               <div className="absolute inset-0 bg-gradient-to-r from-amber-900/30 to-orange-900/20 rounded-lg blur opacity-75 group-hover:opacity-100 transition duration-300" />
               <input
@@ -59,7 +59,7 @@ export default function Home() {
 
             <button
               type="submit"
-              className="w-full px-6 py-4 bg-gradient-to-r from-amber-700 to-amber-600 hover:from-amber-600 hover:to-amber-500 text-white font-semibold rounded-lg transition duration-200 transform hover:scale-105 active:scale-100"
+              className="w-full px-8 py-4 bg-gradient-to-r from-amber-600 to-orange-500 hover:from-amber-500 hover:to-orange-400 text-white font-bold text-lg rounded-lg transition duration-200 transform hover:scale-110 hover:shadow-2xl hover:shadow-amber-600/50 active:scale-100 shadow-lg shadow-amber-700/30"
             >
               {submitted ? '✓ You\'re on the list!' : 'Join the Waitlist'}
             </button>
@@ -74,11 +74,11 @@ export default function Home() {
       </section>
 
       {/* Menu Highlights Section */}
-      <section className="relative py-24 px-6 bg-gradient-to-b from-transparent via-amber-950/10 to-transparent">
+      <section className="relative py-16 px-6 bg-gradient-to-b from-transparent via-amber-950/10 to-transparent">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-16 space-y-3">
-            <h2 className="text-5xl font-bold text-amber-50">Our Menu</h2>
-            <p className="text-amber-100/70 text-lg">
+          <div className="text-center mb-12 space-y-2">
+            <h2 className="text-4xl font-bold text-amber-50">Our Menu</h2>
+            <p className="text-amber-100/70 text-sm">
               Handpicked blends & seasonal specials
             </p>
           </div>
@@ -88,8 +88,8 @@ export default function Home() {
             <div className="flex gap-6 min-w-max px-4">
               {/* Espresso Classics */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Ritual</h3>
                     <p className="text-amber-200/60 text-sm">Espresso</p>
@@ -105,8 +105,8 @@ export default function Home() {
 
               {/* Cappuccino */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Warmth</h3>
                     <p className="text-amber-200/60 text-sm">Cappuccino</p>
@@ -122,8 +122,8 @@ export default function Home() {
 
               {/* Flat White */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Vibe</h3>
                     <p className="text-amber-200/60 text-sm">Flat White</p>
@@ -139,8 +139,8 @@ export default function Home() {
 
               {/* Cortado */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Balance</h3>
                     <p className="text-amber-200/60 text-sm">Cortado</p>
@@ -156,8 +156,8 @@ export default function Home() {
 
               {/* Latte */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Comfort</h3>
                     <p className="text-amber-200/60 text-sm">Latte</p>
@@ -173,8 +173,8 @@ export default function Home() {
 
               {/* Americano */}
               <div className="group relative w-80 flex-shrink-0">
-                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/30 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
-                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm hover:border-amber-600/40 transition duration-300 space-y-5">
+                <div className="absolute inset-0 bg-gradient-to-br from-amber-900/40 to-transparent rounded-2xl blur-xl opacity-0 group-hover:opacity-100 transition duration-300" />
+                <div className="relative h-full p-8 bg-zinc-900/50 border border-amber-700/20 rounded-2xl backdrop-blur-sm group-hover:border-amber-500/50 group-hover:bg-zinc-900/70 transition duration-300 space-y-5 group-hover:translate-y-[-4px]">
                   <div className="space-y-2">
                     <h3 className="text-2xl font-bold text-amber-50">The Long Game</h3>
                     <p className="text-amber-200/60 text-sm">Americano</p>
