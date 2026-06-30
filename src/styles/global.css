@@ -1,0 +1,17 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    @apply bg-zinc-950 text-zinc-100;
+  }
+}
+
+@layer utilities {
+  .cozy-glow {
+    box-shadow: 0 0 40px rgba(217, 119, 6, 0.1);
+  }
+
+  .warm-gradient {
+    background: linear-gradient(135deg, rgba(217, 119, 6, 0.1) 0%, rgba(180, 83, 9, 0.05) 100%);
+  }
+}
